@@ -1,0 +1,3 @@
+[submodule "everAlive_Firmware/components/bme680x"]
+	path = everAlive_Firmware/components/bme680x
+	url = https://github.com/boschsensortec/BME68x_SensorAPI.git
