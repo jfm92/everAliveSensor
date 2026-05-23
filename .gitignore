@@ -1,43 +1,67 @@
-# For PCBs designed using KiCad: https://www.kicad.org/
-# Format documentation: https://kicad.org/help/file-formats/
+# ---------------------------
+# KiCad
+# ---------------------------
 
-# Temporary files
-*.000
-*.bak
-*.bck
+# Backup files
 *.kicad_pcb-bak
 *.kicad_sch-bak
-*-backups
-*-cache*
-*-bak
-*-bak*
-*~
-~*
-_autosave-*
-\#auto_saved_files\#
-*.tmp
-*-save.pro
-*-save.kicad_pcb
-fp-info-cache
-~*.lck
-\#auto_saved_files#
+*.kicad_pro-bak
+*-bak/
+*_autosave-*
+\#auto_saved_files#/
 
-# Netlist files (exported from Eeschema)
+# Automatic backups folder (KiCad 6+)
+*-backups/
+
+# Lock files
+*.lck
+
+# Cache files
+fp-info-cache
+*.kicad_dru
+
+# ERC / DRC reports
+*.rpt
+
+# Netlist exports (generated files)
 *.net
 
-# Autorouter files (exported from Pcbnew)
-*.dsn
-*.ses
+# ---------------------------
+# ESP-IDF
+# ---------------------------
 
-# Exported BOM files
-*.xml
-*.csv
+# Build output
+build/
+sdkconfig.old
 
-# Archived Backups (KiCad 6.0)
-**/*-backups/*.zip
+# Eclipse-based IDEs
+.cproject
+.project
+.settings/
 
-# Local git-based history (KiCad 9.0+)
-.history
+# VSCode / Clangd
+.vscode/
+.cache/
+compile_commands.json
 
-# Local project settings
-*.kicad_prl
+# ESP-IDF managed components lock
+dependencies.lock
+
+# NVS partition CSV (may contain secrets)
+nvs_data.csv
+
+# ---------------------------
+# Python
+# ---------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# ---------------------------
+# OS
+# ---------------------------
+.DS_Store
+Thumbs.db
