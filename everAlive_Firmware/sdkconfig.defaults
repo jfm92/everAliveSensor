@@ -1,0 +1,55 @@
+# This file was generated using idf.py save-defconfig or menuconfig [D] key. It can be edited manually.
+# Espressif IoT Development Framework (ESP-IDF) 5.5.4 Project Minimal Configuration
+#
+CONFIG_IDF_TARGET="esp32c6"
+
+#
+# Bootloader config
+#
+
+#
+# Log
+#
+CONFIG_BOOTLOADER_LOG_LEVEL_NONE=y
+# end of Log
+
+CONFIG_BOOTLOADER_SKIP_VALIDATE_ALWAYS=y
+# end of Bootloader config
+
+#
+# Component config
+#
+
+#
+# Bluetooth
+#
+CONFIG_BT_ENABLED=y
+CONFIG_BT_NIMBLE_ENABLED=y
+
+#
+# NimBLE Options
+#
+
+#
+# BLE 5.x Features
+#
+CONFIG_BT_NIMBLE_50_FEATURE_SUPPORT=n
+# end of BLE 5.x Features
+# end of NimBLE Options
+# end of Bluetooth
+
+#
+# ESP PSRAM
+#
+
+#
+# Log
+#
+
+#
+# Log Level
+#
+CONFIG_LOG_DEFAULT_LEVEL_NONE=y
+# end of Log Level
+# end of Log
+# end of ESP PSRAM
