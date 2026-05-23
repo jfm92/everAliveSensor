@@ -27,6 +27,13 @@ fp-info-cache
 *.net
 
 # ---------------------------
+# Secrets
+# ---------------------------
+
+# WiFi credentials — copy wifi_credentials.h.example and fill in your values
+wifi_credentials.h
+
+# ---------------------------
 # ESP-IDF
 # ---------------------------
 
